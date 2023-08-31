@@ -1,0 +1,27 @@
+<div   style="margin-left: 1100px;margin-top: 40PX;"  ><a class="btn btn-primary" href="post" role="button">ADD NEW USER</a>
+</div>
+
+<table>
+    <th>client id</th>
+    <th>client name</th>
+    <th>phone no</th>
+    <th>addrss</th>
+    <th>gst</th>
+    <th>WEBSITE</th>
+    <th>e-mail</th>
+    <th>contactPerson</th>
+    <th>phoneNumber</th>
+    
+    <tr *ngFor="let x of cllist">
+        <td>{{x.clientId}}</td>
+        <td>{{x.clientName}}</td>
+        <td>{{x.phone}}</td>
+        <td>{{x.address}}</td>
+        <td>{{x.gst}}</td>
+        <td>{{x.website}}</td>
+        <td>{{x.email}}</td>
+        <td>{{x.contactPerson}}</td>
+        <td>{{x.phoneNumber}}</td>
+    </tr>
+    
+    </table>

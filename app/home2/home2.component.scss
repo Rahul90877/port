@@ -1,0 +1,516 @@
+@import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+
+.main {
+  background: #031C32;
+  width: 100%;
+  height: fit-content;
+  // display:flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.nm {
+  margin-top: 150px;
+}
+
+h4 {
+  font-family: 'Righteous', cursive;
+  background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 100px;
+  letter-spacing: 8px;
+  background-size: cover;
+  margin: 0px;
+  color: transparent;
+}
+
+p {
+  font-family: 'Caveat', cursive;
+  color: transparent;
+  font-size: 3rem;
+  letter-spacing: 5px;
+  margin: 0px;
+  background: linear-gradient(to right, #c4c4c4, #6a6a6a);
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+
+.a2 {
+  font-size: 40px;
+  font-family: cursive;
+}
+
+
+/* GLOBAL STYLES */
+// body {
+//   background: #333;
+//   padding-top: em;
+//   display: flex;
+//   justify-content: center;
+// }
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h2 {
+  color: #fff;
+  font-family: monospace;
+  overflow: hidden;
+  /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid orange;
+  /* The typwriter cursor */
+  white-space: nowrap;
+  /* Keeps the content on a single line */
+  margin: 0 auto;
+  /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em;
+  /* Adjust as needed */
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from {
+    width: 0
+  }
+
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent
+  }
+
+  50% {
+    border-color: orange
+  }
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #031C32 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+// <--------------------------------->
+
+
+h3 {
+  //font-size: 9vmin;
+  font-size: 33px;
+  color: white;
+  text-align: center;
+  font-family: Lato, sans-serif;
+  font-weight: 700;
+  margin: 1rem 0 1rem 0rem;
+}
+
+/* Typewriter effect 1 */
+@keyframes typing {
+
+  0.0000%,
+  35.3488% {
+    content: "F";
+  }
+
+  1.1395%,
+  34.2093% {
+    content: "Fr";
+  }
+
+  2.2791%,
+  33.0698% {
+    content: "Fro";
+  }
+
+  3.4186%,
+  32.9302% {
+    content: "Fron";
+  }
+
+  4.5483%,
+  31.9219% {
+    content: "Front";
+  }
+
+  5.6909%,
+  30.9325% {
+    content: "Front-";
+  }
+
+  6.7386%,
+  29.9540% {
+    content: "Front-E";
+  }
+
+  7.8772%,
+  28.9756% {
+    content: "Front-En";
+  }
+
+  9.0169%,
+  27.9972% {
+    content: "Front-End";
+  }
+
+  10.1666%,
+  26.9987% {
+    content: "Front-End D";
+  }
+
+  11.2863%,
+  25.9903% {
+    content: "Front-End De";
+  }
+
+  12.3759%,
+  24.9818% {
+    content: "Front-End Dev";
+  }
+
+  13.4645%,
+  23.9733% {
+    content: "Front-End Deve";
+  }
+
+  14.5431%,
+  22.9863% {
+    content: "Front-End Devel";
+  }
+
+  15.6227%,
+  21.9863% {
+    content: "Front-End Develo";
+  }
+
+  16.6813%,
+  20.9878% {
+    content: "Front-End Developer";
+  }
+
+  37.7674%,
+  72.2791% {
+    content: "F";
+  }
+
+  38.9070%,
+  71.1395% {
+    content: "Fu";
+  }
+
+  39.0093%,
+  70.0500% {
+    content: "Ful";
+  }
+
+  40.1197%,
+  69.0498% {
+    content: "Full";
+  }
+
+  41.2372%,
+  68.0493% {
+    content: "Full ";
+  }
+
+  42.3548%,
+  67.0500% {
+    content: "Full S";
+  }
+
+  43.4734%,
+  66.0507% {
+    content: "Full St";
+  }
+
+  44.5921%,
+  65.0514% {
+    content: "Full Sta";
+  }
+
+  45.7009%,
+  63.5517% {
+    content: "Full Stac";
+  }
+
+  46.8195%,
+  62.5517% {
+    content: "Full Stack ";
+  }
+
+  47.9271%,
+  61.5517% {
+    content: "Full Stack D";
+  }
+
+  48.0557%,
+  60.5517% {
+    content: "Full Stack Dev";
+  }
+
+  49.1743%,
+  59.5518% {
+    content: "Full Stack Deve";
+  }
+
+  50.2924%,
+  58.5518% {
+    content: "Full Stack Develo";
+  }
+
+  51.4101%,
+  57.5519% {
+    content: "Full Stack Develop";
+  }
+
+  52.5287%,
+  56.5517% {
+    content: "Full Stack Developer";
+  }
+
+  75.2791%,
+  100.7674% {
+    content: "";
+  }
+
+  76.4865%,
+  99.9341% {
+    content: "W";
+  }
+
+  77.6942%,
+  98.9930% {
+    content: "We";
+  }
+
+  78.9018%,
+  97.1519% {
+    content: "Web";
+  }
+
+  79.9995%,
+  96.3519% {
+    content: "Web D";
+  }
+
+  80.1392%,
+  95.5519% {
+    content: "Web De";
+  }
+
+  81.2870%,
+  94.7519% {
+    content: "Web Dev";
+  }
+
+  82.4839%,
+  93.7519% {
+    content: "Web Deve";
+  }
+
+  83.6126%,
+  92.7519% {
+    content: "Web Devel";
+  }
+
+  84.7303%,
+  91.7519% {
+    content: "Web Develo";
+  }
+
+  85.8481%,
+  90.7519% {
+    content: "Web Develop";
+  }
+
+  86.9568%,
+  89.7519% {
+    content: "Web Develope";
+  }
+
+  87.9654%,
+  88.7519% {
+    content: "Web Developer";
+  }
+
+
+
+}
+
+
+@keyframes blink {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+}
+
+.typewriter {
+  --caret: currentcolor;
+}
+
+.typewriter::before {
+  content: "";
+  animation: typing 13.5s infinite;
+}
+
+.typewriter::after {
+  content: "";
+  border-right: 1px solid var(--caret);
+  animation: blink 0.5s linear infinite;
+}
+
+.typewriter.thick::after {
+  border-right: 1ch solid var(--caret);
+}
+
+.typewriter.nocaret::after {
+  border-right: 0;
+}
+
+
+@media (prefers-reduced-motion) {
+  .typewriter::after {
+    animation: none;
+  }
+
+  @keyframes sequencePopup {
+
+    0%,
+    100% {
+      content: "developer";
+    }
+
+    25% {
+      content: "writer";
+    }
+
+    50% {
+      content: "reader";
+    }
+
+    75% {
+      content: "human";
+    }
+  }
+
+  .typewriter::before {
+    content: "developer";
+    animation: sequencePopup 12s linear infinite;
+  }
+}
+
+.q1 {
+  height: 500px;
+  //margin-right: 50px;
+}
+
+
+/**/
+///////////////////////////////////////////////////////////////////////////////////////////////////
+
+@media (max-width:720px) {
+  .q1 {
+    height: 400px;
+    width: 100%
+  }
+
+  @import url('https://fonts.googleapis.com/css?family=Caveat|Righteous&display=swap');
+
+  h4 {
+    font-family: 'Righteous', cursive;
+    background: url('https://media.giphy.com/media/FE0WTM8BG754I/giphy.gif') center center no-repeat;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    letter-spacing: 8px;
+    background-size: cover;
+    margin: 0px;
+    color: transparent;
+  }
+
+
+  .a2 {
+    font-size: 10px;
+    font-family: cursive;
+  }
+
+
+  /* GLOBAL STYLES */
+  // body {
+  //   background: #333;
+  //   padding-top: em;
+  //   display: flex;
+  //   justify-content: center;
+  // }
+
+  /* DEMO-SPECIFIC STYLES */
+  .typewriter h2 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    /* Adjust as needed */
+    animation:
+      typing 3.5s steps(30, end),
+      blink-caret .5s step-end infinite;
+  }
+
+  h3 {
+    //font-size: 9vmin;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    font-family: Lato, sans-serif;
+    font-weight: 700;
+    margin: 1rem 0 1rem 0rem;
+  }
+}
+
+@media (max-width:620px) {
+  .nm {
+    margin-top: 150px;
+    width: fit-content;
+  }
+
+  .main {
+    width: fit-content;
+  }
+}

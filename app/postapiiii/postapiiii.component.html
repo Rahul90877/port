@@ -1,0 +1,87 @@
+<div ></div>
+<form [formGroup]="f">
+<div class="row  " style="width: 400px;" >
+  <div class="card" style="margin-left: 50px;margin-top: 70px; height:670px; " >
+    <h3 style="margin-left: 90PX;" >CLIENT FORM</h3>
+<div class="col-5"  style=" margin-top: 60px; width: 300px; " ><input type="text" placeholder="Enter client name" formControlName="clientName"
+    class="form-control"  
+   [ngClass]="{'is-invalid': submitted && f.controls['clientName'].invalid } ">
+  <div *ngIf="submitted && f.controls['clientName'].errors"  > name  is required </div> </div>  
+
+<br>
+  <div class="row" >
+<div class="col-5" style="width: 320px;"  >
+  <input type="number" placeholder="phone no" formControlName = "phone"
+  class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['phone'].invalid}" >
+  <div *ngIf="submitted && f.controls['phone'].errors" >phone no is required</div>
+</div>
+
+  </div>
+
+  <br>
+  <div class="row" >
+    <div class="col-5"  style="width: 320px; " >
+      <input type="text" style="height: 100px;"  placeholder="address" formControlName = "address"
+      class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['address'].invalid}" >
+      <div *ngIf="submitted && f.controls['address'].errors" >address is required</div>
+    </div>
+    
+      </div>
+
+      <br>
+      <div class="row" >
+        <div class="col-5"   style="width: 320px; ">
+          <input type="text" placeholder="GST number" formControlName = "gst"
+          class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['gst'].invalid}" >
+          <div *ngIf="submitted && f.controls['gst'].errors" >gst no is required</div>
+        </div>
+        
+          </div>
+
+
+          <br>
+          <div class="row" >
+            <div class="col-5"  style="width: 320px; " >
+              <input type="text" placeholder="WEBSITE" formControlName = "website"
+              class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['website'].invalid}" >
+              <div *ngIf="submitted && f.controls['website'].errors" >WEBSITE is required</div>
+            </div>
+            
+              </div>
+
+              <br>
+              <div class="row" >
+                <div class="col-5"style="width: 320px; " >
+                  <input type="text" placeholder="EMAIL" formControlName = "email"
+                  class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['email'].invalid}"email="@gmail.com" required >
+                  <div *ngIf="submitted && f.controls['email'].errors" >E-MAIL is required</div>
+                </div>
+                
+                  </div>
+
+                  <br>
+                  <div class="row" >
+                    <div class="col-5"style="width: 320px; " >
+                      <input type="text" placeholder="contact person name" formControlName = "contactPerson"
+                      class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['contactPerson'].invalid}" >
+                      <div *ngIf="submitted && f.controls['contactPerson'].errors" >contact name is required</div>
+                    </div>
+                    
+                      </div>
+
+                      <br>
+                      <div class="row" >
+                        <div class="col-5" style="width: 320px; " >
+                          <input type="number" placeholder="contact person  number " formControlName = "phoneNumber"
+                          class="form-control"  [ngClass]="{'is-invalid':submitted && f.controls['phoneNumber'].invalid}" >
+                          <div *ngIf="submitted && f.controls['phoneNumber'].errors" >contact person number is required</div>
+                        </div>
+                        
+                          </div>
+        
+    <br>
+
+                          <button (click)="Submit()"  style="width: 130px;margin-left: 60px;" >Submit</button>
+</div></div></form>
+
+

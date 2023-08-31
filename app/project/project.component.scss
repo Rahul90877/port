@@ -1,0 +1,31 @@
+.mb {
+    padding-left: 300px;
+}
+
+nav {
+    background-color: #031C32;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.nav-item {
+    color: white;
+    font-size: 20px;
+}
+
+.nv1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    color: #fff;
+    font-size: 2rem;
+}
+
+@media (max-width:550px) {
+    .mb {
+        padding-left: 0px;
+    }
+
+
+}

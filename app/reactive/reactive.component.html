@@ -1,0 +1,75 @@
+<h1 class="a2">REACTIVE FORM</h1>
+
+<div class="card  container " style="margin-top: 40px;width: 540px; " >
+
+    <form [formGroup]="f">
+        <div class="row" >
+            <br>
+            <br>
+            <label>TITLE</label>
+            <div class="col-5"  style="width: 260px;" ><select formControlName="title" class="form-control" [ngClass]="{'is-invalid': submitted && f.controls['tittle'].invalid } " required >
+                <option value=""></option>
+                <option value="Mr">Mr</option>
+                <option value="Mrs">Mrs</option>  
+                <option value="Miss">Miss</option>
+                <option value="Ms">Ms</option>
+            </select>
+               
+              <div *ngIf="submitted && f.controls['tittle'].errors"  > tittle is required </div> </div>  
+              <div class="col-5" style="width: 260px;" ><input type="text" placeholder="name" formControlName="firstName"
+                class="form-control"  
+               [ngClass]="{'is-invalid': submitted && f.controls['firstName'].invalid } " required >
+              <div *ngIf="submitted && f.controls['firstName'].errors"  > is first name required </div> </div>    
+          </div> 
+        
+        <br>
+        <br>
+        <div class="row"  >
+     
+            <div class="col-5"  style="width: 260px;" ><input type="date" placeholder="name" formControlName="firstName"
+                  class="form-control"  
+                 [ngClass]="{'is-invalid': submitted && f.controls['firstName'].invalid } " required >
+                <div *ngIf="submitted && f.controls['firstName'].errors"  >  dob is required </div> </div>  
+                
+                <div class="col-5"  style="width: 260px;"  ><input type="email" placeholder="E-MAIL" formControlName="email"
+                    class="form-control"  
+                   [ngClass]="{'is-invalid': submitted && f.controls['email'].invalid } " email="@gmail.com" required >
+                  <div *ngIf="submitted && f.controls['email'].errors"  > E-MAIL is required </div> </div>  
+            </div>
+            <br>
+            
+    
+     <div class="row" > 
+     <div class="col-5 "  >
+        <input   class="form-check-input "  type="checkbox"  formControlName="check"
+        class="form-check "  
+       [ngClass]="{'is-invalid': submitted && f.controls['check'].invalid } " required >
+      <div *ngIf="submitted && f.controls['check'].errors"  >kindly click the check box </div>Accept Terms & Conditions </div>   
+    </div>
+    
+    
+    <br>
+    <div class="row" >
+        <div class="col-3 "  >
+           <input  style="width: px;"  type="radio"  formControlName="radio"
+           class="form-check-input "  
+          [ngClass]="{'is-invalid': submitted && f.controls['radio'].invalid } " value="option"  required >
+         <div *ngIf="submitted && f.controls['radio'].errors"  ></div> YES </div>  
+         
+         
+         <div class="col-3 "  >
+            <input  style="width: px;"  type="radio"  formControlName="radio"
+            class="form-check-input "  
+           [ngClass]="{'is-invalid': submitted && f.controls['radio'].invalid } "   required >
+          <div *ngIf="submitted && f.controls['radio'].errors"  ></div>   NO </div>  
+       </div>
+       <br>
+       <br>
+       <br>
+     
+            <button class="btn btn-primary"  style="margin-left: 60px;" (click)="Save()">REGISTER</button> <button type="reset" class="btn btn-secondary" style="margin-left: 10PX;" (click)="onReset()" >CANCEL</button>
+             
+    <br>
+    <br>
+    </form></div>
+    

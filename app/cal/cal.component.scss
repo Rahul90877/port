@@ -1,0 +1,112 @@
+// .a1 {
+//     width: 300px;
+// }
+
+// .b1 {
+//     width: 70px;
+//     height: 50px;
+//     margin: 4px;
+//     text-align: center;
+//     padding-top: 12px;
+//     border: 1px solid black;
+//     color:black;
+// }
+
+// .c1 {
+//     height: 200px;
+// }
+
+// .d1 {
+//     position: absolute;
+// }
+
+
+
+// .f1 {
+//     box-shadow: 0px 50px 100px -0px black;
+// }
+
+// .f2 {
+//     height: fit-content;
+//     width: fit-content;
+// } 
+
+// .g1 {
+//     background: url(https://i.pinimg.com/736x/c8/47/74/c847743c94b40d36708800f643848754.jpg)no-repeat;  
+//     background-position: center;
+//     background-size: 100%;
+// }
+
+
+// .c9{background-position: 0% 90% ;
+// transition: all 3s var(--cbz)  os ;}
+
+// .v2{top: -100%;
+// transition: all 3s var(--cbz)  os ;}
+
+/*Calculator Body*/
+.calc-body {
+    width: 275px;
+    margin: auto;
+    min-height: 400px;
+    box-shadow: 0 8px 50px -7px black;
+    background: #3A4655;
+}
+
+/*Calculator Display Screen*/
+.calc-screen {
+    padding: 1rem;
+}
+
+#calc-operation {
+    font-size: 1.3rem;
+    text-align: right;
+    color: #727B86;
+    padding-bottom: .5rem;
+}
+
+#calc-typed {
+    font-size: 2rem;
+    text-align: right;
+    color: #fff;
+}
+
+/*Calculator Buttons*/
+.calc-button-row {
+    display: table;
+}
+
+.calc-button-row button {
+    display: table-cell;
+    width: 25%;
+    background: #425062;
+    color: #fff;
+    height: 65px;
+    font-size: 1.3rem;
+    border: none;
+    border-color: #3C4857;
+    border-width: 1px 1px 0px 0;
+    border-style: solid;
+}
+
+.calc-button-row button.ac {
+    color: #ff7665;
+}
+
+.calc-button-row button.opt {
+    color: #ffbc56;
+}
+
+/*The border has been managed in every fourth button so that the design will not distract.*/
+.calc-button-row button:nth-child(4n) {
+    border-right: none;
+}
+
+.calc-button-row button:active {
+    position: relative;
+    top: 1px;
+}
+
+.calc-button-row button:hover {
+    background: #3e4b5c;
+}

@@ -1,0 +1,131 @@
+<!-- <div class="g1 ">
+
+  <div>
+    <div class="container a1 ">
+      <br>
+      <br>
+      <br>
+      <div class="card e1 f1 c9 v2"
+        style=" height: 580px;padding: 10px;  width: 23rem;border-radius: 50px;background: transparent;padding-right: 30px; ">
+        <br>
+        <br>
+        <div style="padding-left: 30px;padding-right: 30px;">
+          <input type="text" [value]="display"
+            style=" margin: right 40px;font-size: 40px; width:100%;height: 110%;text-align: right;padding:0px;background-color:whitesmoke;"
+            class=" e1 ">
+        </div>
+        <br>
+        <input type="text" [value]="display2" style="margin-right: 30px;margin-left: 30px; font-size: 40px;height: 110%;background-color: whitesmoke;
+    text-align: right; ">
+        <div class="card-body">
+
+          <div class="container text-center">
+            <div class="row">
+              <br>
+              <div class="col"  ><a class="btn btn-  b1 d1 " href="" role="button">%</a></div>
+              <div class="col"><a class="btn btn- b1 d1 " role="button" (click)="Percent()">%</a></div>
+              <div class="col"><a class="btn btn- b1" role="button" (click)="pressC()">CE</a></div>
+              <div class="col"><a class="btn btn- b1" role="button" (click)="pressAC()">C </a></div>
+              <div class="col"><a class="btn btn-danger b1" role="button" (click)="backsp()">⌫ </a></div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="sqroot()">1/x</a></div>
+              <div class="col"><a class="btn btn-. b1" role="button" (click)="sqrooot()">x2</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Sqrt()">2√x</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Pressdiv()">÷</a></div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press7()">7</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press8()">8</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press9()">9</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Pressmulti()">X</a></div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <br>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press4()">4</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press5()">5</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press6()">6</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Presssub()">-</a></div>
+            </div>
+          </div>
+
+          <div class="container text-center">
+            <div class="row">
+              <br>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press1()">1</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press2()">2</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press3()">3</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="PressPlus()">+</a></div>
+            </div>
+          </div>
+
+
+          <div class="container text-center">
+            <div class="row">
+              <br>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="pressaddsub()">+/-</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press0()">0</a></div>
+              <div class="col"><a class="btn btn-  b1" role="button" (click)="Press00()">00</a></div>
+              <div class="col"><a class="btn btn-dark b1" role="button" (click)="Equals()">=</a></div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br> -->
+
+<!-- Calculator Body -->
+<div class="calc-body">
+
+  <!-- Calculator Display Screen -->
+  <div class="calc-screen">
+    <div id="calc-operation"><input type="text" [value]="display"
+        style=" margin: right 40px;font-size: 40px; width:100%;height: 110%;text-align: right;padding:0px;background-color:whitesmoke;"
+        class=" e1 "> </div>
+    <div id="calc-typed"> <input type="text" [value]="display2" style=" font-size: 40px;height: 110%;background-color: whitesmoke;
+        text-align: right;width: 245px; "></div>
+  </div>
+
+  <!-- Calculator Buttons -->
+  <div class="calc-button-row">
+    <button class="ac" (click)="Percent()">%</button>
+    <button class="opt" (click)="pressC()">CE</button>
+    <button class="opt" (click)="pressAC()">C</button>
+    <button class="opt" (click)="backsp()">⌫</button>
+    <button (click)="sqroot()">1/x</button>
+    <button (click)="sqrooot()">x2</button>
+    <button (click)="Sqrt()">2√x</button>
+    <button class="opt" (click)="Pressdiv()">÷ </button>
+    <button (click)="Press7()">7</button>
+    <button (click)="Press8()">8</button>
+    <button (click)="Press9()">9</button>
+    <button class="opt" (click)="Pressmulti()">X</button>
+    <button (click)="Press4()">4</button>
+    <button (click)="Press5()">5</button>
+    <button (click)="Press6()">6</button>
+    <button class="opt" (click)="Presssub()">-</button>
+    <button (click)="Press1()">1</button>
+    <button (click)="Press2()">2</button>
+    <button (click)="Press3()">3 </button>
+    <button class="opt" (click)="PressPlus()">+</button>
+    <button (click)="pressaddsub()">+/- </button>
+    <button (click)="Press0()">0 </button>
+    <button (click)="Press00()">00 </button>
+    <button (click)="Equals()">= </button>
+  </div>
+</div>
